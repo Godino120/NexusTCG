@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.cuerpo {
+    height: 100vh;
+    background-color: #2B3035;
+}
+
+.tcgs {
+    background-color: #404551;
+    margin-bottom: 30px;
+}
+
+.slider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 1712px;
+    height: 300px;
+    align-items: start;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.textoTienda {
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.infoTienda{
+    display: flex;
+    justify-content: space-around;
+}
