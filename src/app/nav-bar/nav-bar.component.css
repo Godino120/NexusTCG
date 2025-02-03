@@ -1,51 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-.logo{
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
+.logo {
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
 }
 
-.navbar-brand{
-    font-size: 45px;
+.navbar-brand {
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue", serif;
 }
 
-.bg-body-tertiary{
-    justify-content: start;
+.bg-body-tertiary {
+  justify-content: space-between;
 }
 
-form{
-    width: 300%;
+.buscar {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
-input{
-    border-radius: 20px;
+form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
 }
 
-.btn-outline-success{
-    border-color: white;
-    color: white;
+input {
+  border-radius: 20px;
 }
 
-.btn-outline-success:hover{
-    background-color: white;
-    color: black;
-    border-radius: 20px;
+.btn-outline-success {
+  border-color: white;
+  color: white;
 }
 
-.enlaces{
-    display: flex;
-    height: 50px;
-    background-color: #14171b;
-    align-items: center;
-    justify-content: space-evenly;
+.btn-outline-success:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
 }
 
-ul{
-    margin: 16px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    list-style:none;
-    color: white;
-    font-size: 16px;
+.enlaces {
+  display: flex;
+  height: 50px;
+  background-color: #14171b;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul {
+  margin: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.usuario {
+  position: relative;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.usuario img{
+    width: 40px;
 }

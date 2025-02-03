@@ -1,34 +1,31 @@
 <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
-    <div class="logo">
-        <div class="container-fluid">
-            <a class="navbar-brand" routerLink="/inicio">
-                <img src="assets/file.png" alt="Logo" width="90" height="70" class="d-inline-block align-text-top">
-                NEXUS TCG
-            </a>
-        </div>
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img src="assets/file.png" alt="Logo" width="90" height="70" class="d-inline-block align-text-top">
+        NEXUS TCG
+      </div>
+      <form class="d-flex buscar" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <div class="usuario">
+        <img src="assets/iconos/login2.png" alt="Icono de Usuario" routerLink="/registro">
+      </div>
     </div>
-    <div class="buscar">
-        <div class="container-fluid">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-        </div>
-    </div>
-</nav>
-<div class="enlaces">
+  </nav>
+  <div class="enlaces">
     <ul>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/inicio">INICIO</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">TIENDA</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">SOBRE NOSOTROS</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/contacto">CONTACTO</a>
-        </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/inicio">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TIENDA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SOBRE NOSOTROS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contacto">CONTACTO</a>
+      </li>
     </ul>
-</div>
+  </div>
