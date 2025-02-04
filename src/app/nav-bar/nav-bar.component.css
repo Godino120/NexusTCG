@@ -51,6 +51,10 @@ input {
   justify-content: space-evenly;
 }
 
+a{
+  text-decoration: none;
+}
+
 ul {
   margin: 16px;
   width: 100%;
