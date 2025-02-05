@@ -20,4 +20,5 @@ export class SesionComponent {
     await this.services.login(this.email, this.password);
     this.ruta.navigate(['/']);
   }
+
 }
