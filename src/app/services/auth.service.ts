@@ -27,5 +27,9 @@ export class AuthService {
     console.log('Usuario registrado');
   }
 
+  async logout(): Promise<void> {
+    await this.auth.signOut();
+    console.log('Usuario deslogueado');
+  }
 
 }

@@ -43,10 +43,27 @@ export class DataService {
     const uid = String(user?.uid);
     
     if (user) {
-      console.log(uid);
       const usuarioRef = ref(this.datos, 'Usuarios/');
-      console.log(usuarioRef);
       await update(usuarioRef, {[uid]:''});
     }
+  }
+
+  async getCarrito(): Promise<Producto[]>{
+    try{
+      const user =  await this.autentificacion.currentUser;
+      if (user) {
+        const carritoRef = ref(this.datos, 'Usuarios/'+String(user.uid));
+        const snapshot = await get(carritoRef);
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          return Object.values(data) as Producto[];
+        }else{
+          return [];
+        }
+      }
+    } catch (error) {
+      console.error('Error al obtener carrito:', error);
+    }
+    return [];
   }
 }

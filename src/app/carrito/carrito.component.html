@@ -1,0 +1,32 @@
+<div class="body">
+    <div class="container">
+        <div class="item" id="titulo">
+            <h1>CARRITO</h1>
+        </div>
+        <div class="item" id="productos">
+            @if (productos.length) {
+                
+                <div class="carrito">
+                @for (producto of productos; track $index) {
+                    @if(producto.Cantidad != 0){
+                            <div class="carrito-item">
+                                <h2>{{producto.Nombre}}</h2>
+                                <p>Precio: {{producto.Precio}}</p>
+                                <p>Cantidad: {{producto.Cantidad}}</p>
+                            </div>
+                        }
+                    }
+                        <p class="total">Total: {{this.total}}€</p>
+                        <button>Pagar</button>
+                    </div>
+            }@else{
+                <p>Tu carrito está vacío.</p>
+            }
+            <a routerLink="/tienda">Volver a la tienda</a>
+        </div>
+        <div class="item" id="info">
+            <h2>POLÍTICAS DE ENVÍO</h2>
+            <p>En Nexus TCG, nos comprometemos a que tus productos lleguen de forma segura y en el menor tiempo posible. Procesamos los pedidos en un plazo de 1-2 días hábiles, y ofrecemos varias opciones de envío para adaptarnos a tus necesidades. Una vez despachado, recibirás un número de seguimiento para que puedas estar al tanto de tu pedido en todo momento. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos; estamos aquí para ayudarte.</p>
+        </div>
+    </div>
+</div>
