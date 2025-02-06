@@ -19,6 +19,7 @@ export class RegistroComponent {
 
   async registrar(): Promise<void> {
     await this.service.registro(this.email, this.password);
+    console.log("hola");
     await this.datos.agregarUsuario();
     this.ruta.navigate(['/']);
   }

@@ -1,1 +1,17 @@
-<p>tienda works!</p>
+<a routerLink="/carrito">Acceder al carrito</a>
+<div class="catálogo">
+    @if (productos.length) {
+    @for (producto of productos; track $index) {
+        <div class="producto">
+            <h2>{{producto.Nombre}}</h2>
+            <img [src]="producto.Imagen" alt="{{producto.Nombre}}" class="producto-imagen"/>
+            <p>Precio: {{producto.Precio}}€</p>
+            <input type="number" [(ngModel)]="cantidad" min="0" max="100" step="1"/>
+            <button (click)="agregar(producto)">Agregar al carrito</button>
+            
+        </div>
+    }
+    }@else{
+        <p>No hay productos disponibles.</p>
+    }
+</div>
