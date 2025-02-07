@@ -14,9 +14,13 @@
       <div class="carrito">
         <img src="assets/iconos/carrito.png" alt="Icono de Carrito" routerLink="/carrito">
       </div>
-      <div class="usuario">
-        <img src="assets/iconos/login2.png" alt="Icono de Usuario" routerLink="/iniciarSesion">
-      </div>
+      @if(estaRegistrado){
+        <a style="color: lightblue;" (click)="logout()">Cerrar Sesion</a>
+      }@else{
+        <div class="usuario">
+          <img src="assets/iconos/login2.png" alt="Icono de Usuario" routerLink="/iniciarSesion">
+        </div>
+      }
     </div>
   </div>
 
